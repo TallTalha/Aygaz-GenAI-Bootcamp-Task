@@ -1,0 +1,70 @@
+prompt 1 --->
+Senior Frontend geliştiricisi olarak hareket etmeni istiyorum.
+
+prompt 2 --->
+Senior Frontend geliştiricisi olarak senden bir projeyi hayata geçirmeni isteyeceğim.
+
+prompt 3 --->
+Tabi ki bilgileri birazdan ileteceğim, verdiğim bilgiler doğrultusunda projeyi oluşturacaksın.
+
+prompt 4 --->
+Bir Frontend geliştiricisisin, ana unsurları responsive CSS tasarımı ve mobil/masaüstü cihazlarla uyumlu, yalnızca HTML,CSS ve Javascript kullanan bir projeyi oluşturacaksın. Bu projeyi size teslim eden ünlü bir doğa fotoğrafçısı. Fotoğrafçının ismi Burak O’Connell, kendisi çektiği doğa fotoğraflarını yayınlayabileceği ve fotoğraflarının hikayesini anlatabileceği sade, modern tasarımlara sahip ve responsive bir site tasarımı istiyor. Bu site tasarımı aşağıdaki talimatlara  göre oluşturulması gerekli.
+
+Talimatlar: 
+
+1 - Sayfa içeriği, sayfada ortalanmış üç bölümü içermelidir (Header,Main,Footer):
+
+1.1 - “Header” bölümü
+
+Bu bölümün sol köşesinde bir menü simgesi, tam ortasında logo ve logonun altında fotoğrafçının ismi, sağ köşesinde ise Türkçe ve İngilizce dilleri için sayfanın dilini değiştirme butonu ile site içinde yayınlanan gönderilerdeki anahtar kelimelere göre ilgili gönderiyi bulabileceğimiz bir arama butonu. Bu bölüm ekranın %12’sini kapsayacaktır.
+
+1.1.1 - Menü Butonu
+
+Menü butonuna tıklandığında sayfanın sol tarafından sağa kayarak gelen ve sayfanın yalnızca %20’sini kapsayan bir navigasyon paneli gelmeli. Tekrar menü butonuna tıklandığında bu panel sola kayarak gizlenmeli. Panel içerisinde Hakkımda, Kullandığım Ekipmanlar ve Tüm İçerikler bölümleri bulunmalı. Menü ikonu 32x32 piksel olmalı ve icons dosyasının alt dizininde bulunmakta.
+
+1.1.2 - Logo ve Fotoğrafçının ismi
+
+Logo tam ortada olmalı, logo boyutu 250x250 piksel olmalı ve logo proje klasörü içindeki sources/logo/logo.png konumunda bulunuyor. Fotoğrafçının ismi (Burak O’Connell) sade ve etkili bir yazı stili ile logonun altında yer almalı.
+
+1.1.3 - Dil Değiştirme Butonu
+
+Dil değiştirme butonu sitedeki yazıları İngilizce ve Türkçe dillerine çevirebilmeli. Türkçe diline çevirmek için kullanıcı ikonu Türk bayrağı olan bir butona, İngilizce diline çevirmek için İngiltere bayrağı ikonu bulunan butona basmalı. 
+
+1.1.3 - Arama Butonu
+
+Arama butonu dil değiştirme butonlarının sağında ve Header bölümünün sağ köşesinde bulunmalıdır. Bu butona basıldığında bir arama kutucuğu çıkmalı ve kullanıcı buraya bazı kelimeler girerek istediği içeriği bulabilmelidir. Arama butonu ikonu 32x32 piksel olmalı ve icons dosyasının alt dizininde bulunmaktadır.   
+
+1.2 - “Main” bölümü
+
+Bu bölüm fotoğrafçının fotoğraflarını yayınlayacağı, eserleri çekerken başından geçen olayları/hikayeleri, fotoğrafı çekmek için kullandığı için ekipmanları kullanıcılar ile paylaşacağı kısımdır. Bu kısım ekranın %80’ini kapsayacaktır. Main kısmında sadece 1 gönderi gösterilecektir, diğer içeriklere ulaşmak için gönderinin sağında ve solunda bir sonraki gönderiye veya bir önceki gönderiye dönmeyi sağlayan yön butonları bulunacaktır, bu butonlar 40x40 piksel olmalıdır. Kullanıcı sadece yön butonları ile gönderileri gezmek zorunda değildir, arama butonu ile içeriklerin başlıklarında veya metinlerdeki anahtar kelimeleri arayarak istediği gönderiyi main bölümünde görebilmelidir. İstediği gönderiyi getirdikten sonra yine yön butonlarını kullanmak isterse rastgele içerikler gösterilmelidir.
+
+1.2.1 Gönderiler
+
+Gönderilerin içeriğinde fotoğraf, hikaye, fotoğraf çekilirken kullanılan ekipmanlar şeklinde kısımlara ayrılacaktır. Fotoğraflar sources/contents konumunda bulunmaktadır ve dosya isimlerinde tarih_başlık.png şeklinde isimlendirilme yapılmıştır. Fotoğrafların boyutları değişebileceği için gönderi yayınlanırken fotoğrafın en:boy oranı korunmalıdır. Hikaye, kullanılan ekipman yazıları gizlenebilir sekmeler halinde gösterilmelidir. Hikaye kısmı varsayılan olarak açık görünmeli, kullanılan ekipmanlar sekmesi varsayılan olarak gizli görünmelidir. Kullanıcı bu sayede sadece kullanılan ekipmanları merak ediyorsa sekmeyi açarak kullanılan ekipmanları görecektir.
+
+1.3 - “Footer” bölümü
+
+Bu bölüm ekranın geriye kalan %8’lik kısmını kapsayacaktır. Burada fotoğrafçının iletişim için mail adresi ve Linkedin hesabına ulaşılması sağlanacaktır. Bunlar 32x32 piksel ikonlar olacak şekilde tasarlanacaktır.
+
+
+prompt 5 --->
+main bölümünde kullanıcılar ekranda sadece bir tane içerik görebilecek, gönderinin solu ve sağında yön butonları olacak, bu butonlar ile bir önceki veya bir sonraki içeriğe geçiş yapılabilecek. Buradaki main bloğunda bir tane post ekledik, bunu dinamik bir şekilde değiştirebilmek için HTML yapısını değiştirmemiz gerekiyor mu ?
+Tamamdır HTML yapısı iyi görünüyor. Diğer dosyalara geçelim lütfen.
+
+prompt 6 --->
+Menü ikonuna tıklandığında sol taraftan kayarak gelen bir panel çıkmıyor ve menü panelinde görünmesi gerekirken "Hakkımda,Kullandığım Ekipmanlar,Tüm İçerikler" başlıklar header kısmında liste olarak görünüyor. Arama kutusuna girdi verildiğinde sitedeki gönderilerde bu girdi aranmıyor.
+
+prompt 7 --->
+Menü ikonuna basıldığında kayarak bir panel açılıyor ama paneli kapatarak normal düzene döndürmek için bir buton koyulmamış. Ayrıca arama kutusuna yazılan kelimeye göre ilgili içerik direkt olarak getirilmemeli. Girdi verildikten sonra eğer ilgili içerik varsa bir liste halinde combo box ile kunllanıcıya döndürülmeli ardından kullanıcı o combo box üzerinden ilgili içeriğe tıklarsa içerik değiştirilmeli.
+
+prompt 8 --->
+Arama kutusuna girdi girildiğinde kullanıcıya bir liste döndürülmüyor.
+
+prompt 9 --->
+Evet kullanıcı artık bir girdi girdiğinde bir liste döndürülüyor fakat bu liste searchBox'ın altından kayarak gösterilmiyor.
+
+prompt 10 --->
+Bu beklediğim gibi olmadı. Şöyle bir örnek vererek beklentimi anlatabilirim. Mesela, tarayıcının URL kısmına bir girdi girdiğimizde yazdığımız kısmın altında bir menü açılıyor ve seçebileceğimiz seçenekler  listeleniyor. Bu yazdığımız kodlarda ise kullanıcı bir girdi girdiğinde arama kutusunun altında bir menü açılmıyor bunun yerine panele yeni bir liste bileşeni ekleniyor ve o bileşen üzerinde arama sonuçları listeleniyor. Bu görüntü kullanıcıyı rahatsız edebilir ve zorluğa neden olur.
+
+prompt 11 --->
+Teşekkür ederim.

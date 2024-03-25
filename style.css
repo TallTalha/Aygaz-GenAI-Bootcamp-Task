@@ -1,0 +1,238 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 666px;
+}
+
+
+.logo {
+    width: 75px;
+    height: 75px;
+}
+
+.language-switch {
+    display: flex;
+    margin-right: 10px;
+}
+
+.lang-btn {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.search-btn {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.search {
+    position: relative;
+    width: 300px; /* Arama kutusunun genişliğini ayarlıyoruz */
+}
+
+.search-box {
+    display: none; /* Varsayılan olarak gizli */
+    position: absolute;
+    top: 50px; /* Arama butonunun altında */
+    left: -115px; /* 100px sola kaydır */
+    width: calc(100% + 10px); /* Genişliği kaydırma miktarı kadar artır */
+    z-index: 10;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-results {
+    display: none; /* Varsayılan olarak gizli */
+    position: absolute;
+    top: calc(100% + 30px); /* Arama kutusunun altında */
+    left: -115px; /* 100px sola kaydır */
+    width: calc(100% + 10px); /* Genişliği kaydırma miktarı kadar artır */
+    z-index: 10;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+.search-result-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-result-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    min-height: 80vh;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.post-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.post-story {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.post-equipment {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f8f8f8;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+footer {
+    padding: 10px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+}
+
+/* Medya sorguları */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-switch {
+        margin-top: 10px;
+    }
+
+    .prev-btn,
+    .next-btn {
+        display: none;
+    }
+
+    .menu-panel {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 20%;
+        height: 100%;
+        background-color: #f8f8f8;
+        transition: left 0.3s;
+    }
+
+    .menu-panel ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-panel li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+}
+/* Diğer stiller sabit kalıyor, sadece .menu-panel stilini ekliyoruz veya düzenliyoruz. */
+
+.menu-panel {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 100%;
+    background-color: #f8f8f8;
+    transition: left 0.3s;
+    z-index: 1000; /* Yüksek z-index değeri ile menü panelini en üste çıkarıyoruz. */
+}
+
+.menu-panel ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-panel li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Kapatma butonu için stil ekliyoruz */
+.close-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+

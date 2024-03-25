@@ -1,0 +1,8 @@
+prompt 1 --->
+turkish language icon, in .ico format, 32x32 pixels
+
+prompt 2 --->
+english language icon, in .ico format, 32x32 pixels
+
+prompt 3 --->
+search icon, in .ico format, 32x32 pixels
